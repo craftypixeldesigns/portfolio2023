@@ -24,6 +24,7 @@
 .container_flex-column-size-sm {
   gap: var(--dl-space-space-md);
 }
+
 .section_main-content {
   gap: var(--dl-space-space-md);
   flex: 0 0 auto;
@@ -34,6 +35,15 @@
   margin-left: var(--dl-space-space-xl);
   margin-right: var(--dl-space-space-xl);
   justify-content: flex-start;
+}
+
+.section_main-content,
+.container_flex-column-size {
+  scroll-behavior: smooth;
+  -webkit-scroll-behavior: smooth;
+  -moz-scroll-behavior: smooth;
+  -ms-scroll-behavior: smooth;
+  -o-scroll-behavior: smooth;
 }
 
 .gap-xxs {
@@ -84,9 +94,9 @@
 .button:hover::after, .button:focus::after {
   transform: translate(-.85rem, -.85rem);
   -webkit-transform: translate(-.85rem, -.85rem);
-    -moz-transform: translate(-.85rem, -.85rem);
-    -ms-transform: translate(-.85rem, -.85rem);
-    -o-transform: translate(-.85rem, -.85rem);
+  -moz-transform: translate(-.85rem, -.85rem);
+  -ms-transform: translate(-.85rem, -.85rem);
+  -o-transform: translate(-.85rem, -.85rem);
 }
 
 .section_header {
@@ -201,7 +211,10 @@ h2::before {
 
 .button-text, .button-text:after, .button-text:before {
   box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
 }
 .button-text {
   margin:0;padding:0;border:0 none;
@@ -383,7 +396,7 @@ h2::before {
 }
 .section-about_logos-size {
   width: 80%;
-  object-fit: cover;
+  object-fit: contain;
 }
 .home-logo01 {
   width: 45%;
@@ -392,7 +405,7 @@ h2::before {
   width: 35%;
 }
 .home-logo03 {
-  width: 70%;
+  width: 66%;
 }
 .section-about_row-individual {
   width: 33%;
@@ -417,6 +430,10 @@ h2::before {
   justify-self: center;
   border-radius: var(--dl-radius-radius-lg);
 }
+#about_design-process.section-card_outline {
+  gap: var(--dl-space-space-md);
+}
+
 .section-card_outline {
   gap: var(--dl-space-space-xs);
   width: 100%;
@@ -502,6 +519,7 @@ img::selection {
 .section-card_expandable:hover,
 .section-card_expandable:focus {
   border-color: var(--dl-color-colours-accent-1-extra-dark);
+  cursor: pointer;
 }
 
 .section-card_expandable:hover .w01,
