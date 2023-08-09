@@ -450,7 +450,7 @@ h2::before {
   border-color: var(--dl-color-colours-accent-2-dark);
   border-style: solid;
   border-width: 1.6px;
-  border-radius: var(--dl-radius-radius-md);
+  border-radius: var(--dl-radius-radius-sm);
   flex-direction: column;
 }
 
