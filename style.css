@@ -280,16 +280,20 @@ h2::before {
   width: 45%;
 }
 
-.home-section-work .section-card_expandable:last-child .section-work_img-main,
-.mobile_section-work .section-card_expandable:last-child .section-work_img-main {
+.home-section-work .section-card_expandable:nth-child(6) .section-work_img-main,
+.mobile_section-work .section-card_expandable:nth-child(6) .section-work_img-main,
+.home-section-work .section-card_expandable:nth-child(4) .section-work_img-main,
+.mobile_section-work .section-card_expandable:nth-child(4) .section-work_img-main {
   display: flex;
   justify-content: center;
   padding-left: var(--dl-space-space-md);
   margin-bottom: var(--dl-space-space-sm);
 }
 
-.home-section-work .section-card_expandable:last-child img,
-.mobile_section-work .section-card_expandable:last-child img {
+.home-section-work .section-card_expandable:nth-child(6) img,
+.mobile_section-work .section-card_expandable:nth-child(6) img,
+.home-section-work .section-card_expandable:nth-child(4) img,
+.mobile_section-work .section-card_expandable:nth-child(4) img  {
   width: 46%;
   border-radius: 13%;
   box-shadow: 0px 0px 0px 0px rgba(30, 30, 30, 0.05), 1px 1px 4px 0px rgba(30, 30, 30, 0.05), 5px 5px 7px 0px rgba(30, 30, 30, 0.04), 10px 10px 9px 0px rgba(30, 30, 30, 0.03), 19px 19px 11px 0px rgba(30, 30, 30, 0.01), 29px 29px 12px 0px rgba(30, 30, 30, 0.00);
@@ -524,8 +528,11 @@ img::selection {
 
 .section-card_expandable:hover .w01,
 .section-card_expandable:focus .w01,
-.section-card_expandable:hover .w03,
-.section-card_expandable:focus .w03 {
+.section-card_expandable:hover .w05,
+.section-card_expandable:focus .w05,
+.section-card_expandable:hover .w04,
+.section-card_expandable:focus .w04
+ {
   transform: rotate(1deg) translateY(-7px);
   -webkit-transform: rotate(1deg) translateY(-7px);
   -moz-transform: rotate(1deg) translateY(-7px);
@@ -535,8 +542,11 @@ img::selection {
 
 .section-card_expandable:hover .w02,
 .section-card_expandable:focus .w02,
-.section-card_expandable:hover .w04,
-.section-card_expandable:focus .w04 {
+.section-card_expandable:hover .w03,
+.section-card_expandable:focus .w03,
+.section-card_expandable:hover .w06,
+.section-card_expandable:focus .w06
+ {
   transform: rotate(-1deg) translateY(-7px);
   -webkit-transform: rotate(-1deg) translateY(-7px);
   -moz-transform: rotate(-1deg) translateY(-7px);
