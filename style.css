@@ -152,6 +152,9 @@
   width: 70%;
   object-fit: cover;
 }
+.img-logo {
+  width: 24px;
+}
 
 .size_heading {
   width: 85%;
@@ -594,7 +597,7 @@ img::selection {
 }
 .section-card_expanded-title::after {
   content: "";
-  background: url(public/icons/icon_chevron-up.svg) no-repeat;
+  background: url(public/icons/icon_chevron-down.svg) no-repeat;
   background-position: center;
   color: background: var(--dl-color-colours-primary);
   width: 24px;
@@ -680,6 +683,10 @@ input:checked ~ .expanded-content-about {
   .section_header {
     margin-left: var(--dl-space-space-md-sm);
     margin-right: var(--dl-space-space-md-sm);
+  }
+  #header {
+    padding-top: var(--dl-space-space-md-sm);
+    padding-bottom: var(--dl-space-space-md);
   }
   .section-footer_container {
     margin-left: var(--dl-space-space-md-sm);
